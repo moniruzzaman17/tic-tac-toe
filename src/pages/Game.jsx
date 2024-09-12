@@ -38,7 +38,7 @@ export default function Game() {
     });
 
   return (
-    <div className="game">
+    <div className="game-wrapper">
       <div className="game-board">
         <Board squares={current} onClick={handleClick} />
       </div>

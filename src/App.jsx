@@ -7,9 +7,7 @@ import Game from './pages/Game'
 function App() {
   return (
     <>
-    <div className='w-100 d-flex justify-content-center align-items-center'>
     <Game/>
-    </div>
     </>
   )
 }

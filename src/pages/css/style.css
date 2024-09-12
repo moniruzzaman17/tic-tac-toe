@@ -1,5 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #caebb2;
+}
+
+#root {
+    font-family: Arial, sans-serif;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -7,7 +12,6 @@ body {
     margin: 0;
     background-color: #caebb2;
 }
-
 .square {
     width: 130px;
     height: 130px;
@@ -42,15 +46,17 @@ clear: both;
 content: "";
 display: table;
 }
-  
-  .game {
+.game-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
+}
   .game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
   }
   
