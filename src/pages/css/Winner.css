@@ -1,0 +1,63 @@
+
+  /* winner css  */
+  /* src/Winner.css */
+/* Overall container styling */
+.winner-animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff0, #ff5, #f5f, #0f0);
+    animation: backgroundSlide 10s infinite alternate;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Background gradient animation */
+@keyframes backgroundSlide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text styling for winner announcement */
+.celebration-text {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    z-index: 2;
+}
+
+.celebration-text h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.celebration-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Trophy image styling */
+.trophy {
+    position: absolute;
+    bottom: 10%;
+    animation: bounce 2s infinite;
+}
+
+.trophy img {
+    width: 150px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+
+/* Trophy bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
