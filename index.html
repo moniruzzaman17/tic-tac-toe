@@ -19,10 +19,55 @@
     />
   <!-- Add Confetti CDN -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js" defer></script>
+  <style>
+    
+.wave {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: #0af;
+  width: 500px;
+  height: 400px;
+  margin-left: -100px;
+  margin-top: 0px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 7000ms infinite linear;
+  z-index: -1;
+}
+
+.wave.-three {
+  animation: drift 7500ms infinite linear;
+	position: fixed;
+	background-color: #77daff;
+}
+
+.wave.-two {
+  animation: drift 3000ms infinite linear;
+  opacity: .1;
+  background: black;
+	position: fixed;
+}
+
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+  </style>
   </head>
   <body>
     <div id="root" class="container-fluid"></div>
-    
+    <div class='box'>
+      <div class='wave -one'></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+    </div>    
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
