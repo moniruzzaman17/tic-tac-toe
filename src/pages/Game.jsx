@@ -44,8 +44,8 @@ export default function Game() {
         <Board squares={current} onClick={handleClick} />
       </div>
       </div>
-      <div className="col-sm-12 col-md-6 d-md-flex ">
-      <div className="game-info">
+      <div className="col-sm-12 col-md-6 d-flex justify-content-center">
+      <div className="game-info mt-3">
         <div>{winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`}</div>
         <ol>{renderMoves()}</ol>
       </div>
