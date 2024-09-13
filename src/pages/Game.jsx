@@ -41,10 +41,10 @@ export default function Game() {
     <div className="game-wrapper">
       <div className="game-board">
         <Board squares={current} onClick={handleClick} />
+      </div>
       <div className="game-info">
         <div>{winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`}</div>
         <ol>{renderMoves()}</ol>
-      </div>
       </div>
     </div>
   );
