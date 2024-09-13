@@ -38,13 +38,17 @@ export default function Game() {
     });
 
   return (
-    <div className="game-wrapper">
+    <div className="game-wrapper row">
+      <div className="col-sm-12 col-md-6 d-md-flex justify-content-end">
       <div className="game-board">
         <Board squares={current} onClick={handleClick} />
       </div>
+      </div>
+      <div className="col-sm-12 col-md-6 d-md-flex ">
       <div className="game-info">
         <div>{winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`}</div>
         <ol>{renderMoves()}</ol>
+      </div>
       </div>
     </div>
   );

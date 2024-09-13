@@ -46,12 +46,12 @@ clear: both;
 content: "";
 display: table;
 }
-.game-wrapper{
+/* .game-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
   .game-info {
     display: flex;
     flex-direction: column;
